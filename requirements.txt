@@ -1,0 +1,10 @@
+django
+djangorestframework
+djangorestframework_simplejwt
+django-cors-headers
+secure-smtplib
+drf-yasg
+celery
+django-celery-beat
+redis
+sqlalchemy
