@@ -1,0 +1,29 @@
+# Django project directories
+__pycache__/
+env/
+staticfiles/
+media/
+migrations/
+
+# Django development files
+*.sqlite3
+*.sqlite
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyzw
+*.swp
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+
+# Dependency management files
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
