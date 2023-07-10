@@ -34,7 +34,8 @@ schema_view = swagger_get_schema_view(
             The developed APIs for the social media platform provide a comprehensive set of functionalities to allow users to 
             create accounts, log in and out, verify their email addresses, create posts with text and image attachments, follow and unfollow other users, 
             view a timeline of posts from followed users, like and comment on posts, view user profiles with relevant information, 
-            search for other users by username or name, and provide an admin(**http://127.0.0.1:8000/admin/**) interface for managing users, posts, and comments.
+            search for other users by username or name, and provide an admin(**http://127.0.0.1:8000/admin/**) interface for managing users, posts, 
+            and comments under **UserPost** table.
             NOTE - Developers: Here we are not allowing creating admin automatically, so plese makse sure that have admin account.
 
             - The APIs are designed to be user-friendly, secure, and efficient. They handle various error scenarios and provide appropriate error responses to 
@@ -49,6 +50,13 @@ schema_view = swagger_get_schema_view(
 
             - In conclusion, the developed APIs for the social media platform offer a robust and scalable solution for building a social media application, 
             enabling users to connect, share, and interact within the platform's ecosystem.
+        
+            Authorize
+            ---------
+            
+            - please provide your AUTH-TOEN to Authorize swagger function (**format: Token {YOUR TOKEN}**) for further api access.
+
+            **Thankyou**
         """,
     ),
     public=True,

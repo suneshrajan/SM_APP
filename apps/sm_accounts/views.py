@@ -168,7 +168,7 @@ class GenerateOTP(APIView):
             else:
                 verify_email_obj.otp = otp_hasned
                 verify_email_obj.save()
-                smtp.send_mail(user_name=user.username, otp=otp)
+                smtp.send_mail(user_name=user.username, user_email=user.email, otp=otp)
                 return Response({'detail': 'OTP generated and sent successfully to given email.'}, status=status.HTTP_200_OK)
         except Exception as e:
             return Response(f'Somthing went wrong: {e}', status=status.HTTP_500_INTERNAL_SERVER_ERROR)
